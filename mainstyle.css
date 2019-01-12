@@ -1,7 +1,5 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-	  
-
+<Variable name="colorDarkBrown" description="Dark Brown"
+             type="color" default="#754d1b" value="#754d1b">
 
 /* variables
 ----------------------------------------------- */
@@ -32,7 +30,7 @@ $primary-color: #333;
 #Dam3Font {
 	font-family: Dam3Font;	
 	font-size: 22px;
-	color: var(--main-txt-color);
+	color: var(--main-txt-color), blue;
 	
 }
 
@@ -40,7 +38,7 @@ $primary-color: #333;
 #Damcursv1 {
 	font-family: Damcursv1, $mainFont;	
 	font-size: 24px;
-	color: $primary-color;
+	color: $colorDarkBrown;
 }
 
 #Damspeed {
