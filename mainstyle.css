@@ -33,6 +33,7 @@
 #Damspeed {
 	font-family: Damspeed;	
 	font-size: 22px;
+	color: $(colorDarkBrown);
 }
 
 #Dam3Font {
