@@ -1,15 +1,33 @@
+/* fonts
+----------------------------------------------- */
+@font-face {
+    font-family: Dam3Font;
+    src: url(https://indiegamelover.github.io/indiegamelover/Dam3-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: Damcursv1;
+    src: url(https://indiegamelover.github.io/indiegamelover/Damcursv-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: Damspeed;
+    src: url(https://indiegamelover.github.io/indiegamelover/Damspeed-Regular.woff) format('woff');
+}
+
+
 #Dam3Font {
 	font-family: Dam3Font, $mainFont;	
-	font-size: 22px
+	font-size: 22px;
 }
 
 
 #Damcursv1 {
 	font-family: Damcursv1, $mainFont;	
-	font-size: 24px
+	font-size: 24px;
 }
 
 #Damspeed {
 	font-family: Damspeed, $mainFont;	
-	font-size: 22px
+	font-size: 22px;
 }
