@@ -1,0 +1,10 @@
+body {
+	font-family: $mainFont;
+	margin: 0;
+	// text-align: center; 		/* Changes footer */
+	min-width: 100%;
+	min-height: 100%;
+	background: $colorLightBrown;      
+	color: $colorBlack;
+	font-size: $smallFontSize;
+}
