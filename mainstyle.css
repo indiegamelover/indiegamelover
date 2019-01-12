@@ -26,12 +26,12 @@
 
 
 #Damcursv1 {
-	font-family: Damcursv1, $mainFont;	
+	font-family: Damcursv1;	
 	font-size: 24px;
 }
 
 #Damspeed {
-	font-family: Damspeed, $mainFont;	
+	font-family: Damspeed;	
 	font-size: 22px;
 }
 
