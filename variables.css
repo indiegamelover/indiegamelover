@@ -1,5 +1,5 @@
 /* Variable
-   ====================
+   ==================== */
 
 	<Variable name="colorWhite" description="Color White"
              type="color" default="#ffffff" value="#ffffff">
@@ -64,4 +64,3 @@
       type="automatic" default=".08em;">
 
  
-*/
