@@ -32,7 +32,7 @@
 #Damspeed {
 	font-family: Damspeed;	
 	font-size: 22px;
-	var(--main-txt-color, blue);
+	color: var(--main-txt-color, blue);
 }
 
 #Dam3Font {
