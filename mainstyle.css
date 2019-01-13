@@ -1,13 +1,67 @@
-/* variables
------------------------------------------------ */
-:root {
-  --main-bg-color: red;
-  --main-txt-color: blue; 
-  --main-bordrad: 3px; 
-}
+<style>
+<Variable name="colorWhite" description="Color White"
+             type="color" default="#ffffff" value="#ffffff">
+	<Variable name="colorBlack" description="Color Black"
+             type="color" default="#000000" value="#000000">
+	<Variable name="colorWhiteGrey" description="Color White Grey"
+             type="color" default="#a2a2a2" value="#f6f6f6">
+	<Variable name="colorLightestGrey" description="Color Light Grey"
+             type="color" default="#d8d8d8" value="#d8d8d8">
+	<Variable name="colorLightGrey" description="Color Light Grey"
+             type="color" default="#a2a2a2" value="#a2a2a2">
+	<Variable name="colorDarkGrey" description="Dark Grey"
+             type="color" default="#525252" value="#525252">
+	<Variable name="colorMidGrey" description="Color Mid Grey (darkest)"
+             type="color" default="#2A2728" value="#2A2728">	
+	<Variable name="colorLightestPink" description="Lightest Pink"
+             type="color" default="#f6e3e2" value="#f6e3e2">
+	<Variable name="colorLightPink" description="Light Pink"
+             type="color" default="#caa09c" value="#caa09c">
+	<Variable name="colorBrightPink" description="Bright Pink"
+             type="color" default="#b31362" value="#b31362">
+	<Variable name="colorDarkPink" description="Color Dark Pink"
+             type="color" default="#bc857a" value="#bc857a">
+	<Variable name="colorDarkestPink" description="Color Darkest Pink"
+             type="color" default="#7d5850" value="#7d5850">	
+	<Variable name="colorWhiteBrown" description="Color Nearly White Brown"
+             type="color" default="#fef8f2" value="#fef8f2">
+	<Variable name="colorLightestBrown" description="Lightest Brown"
+             type="color" default="#feebda" value="#feebda">
+	<Variable name="colorLightBrown" description="Light Brown"
+             type="color" default="#d8b89a" value="#d8b89a">
+	<Variable name="colorDarkBrown" description="Dark Brown"
+             type="color" default="#754d1b" value="#754d1b">
+	<Variable name="colorNewBrown" description="New Brown"
+             type="color" default="#9a7b59" value="#9a7b59">
+		
+	<Variable name="Dam3Font" description="Doodle Style"
+      type="font" default="Dam3Font, sans-serif, Arial;" value="Dam3Font, sans-serif, Arial;">
 
-/* fonts
------------------------------------------------ */
+	<Variable name="graphicFont" description="Graphic Fancy Font"
+      type="font" default="Cabin Sketch, sans-serif, Arial;" value="Cabin Sketch, sans-serif, Arial;">
+
+	<Variable name="writtenFont" description="Written Font"
+      type="font" default="Just Me Again Down Here, sans-serif, Arial;" value="Just Me Again Down Here, sans-serif, Arial;">
+
+	<Variable name="mainFont" description="Main Font"
+      type="font" default="Open Sans Condensed, sans-serif, Arial;" value="Open Sans Condensed, sans-serif, Arial;">
+
+	<Variable name="largeFontSize" description="Large Font Size"
+      type="automatic" default="30px;">
+
+	<Variable name="medFontSize" description="Medium Font Size"
+      type="automatic" default="20px;">
+
+	<Variable name="smallFontSize" description="Small Main Font Size"
+      type="automatic" default="16px;">
+
+	<Variable name="xsmallFontSize" description="Extra Small Main Font Size"
+      type="automatic" default="14px;">
+
+	<Variable name="letterSpacing" description="Letter Spacing"
+      type="automatic" default=".08em;">
+	  </style>
+
 @font-face {
     font-family: Dam3Font;
     src: url(https://indiegamelover.github.io/indiegamelover/Dam3-Regular.woff) format('woff');
@@ -27,27 +81,5 @@
 #Damcursv1 {
 	font-family: Damcursv1;	
 	font-size: 24px;
-	color: var(--main-txt-color);
+	color: $(colorBrightPink);
 }
-
-/* IE */
-#Damcursv1 {
-	color: #bc857a;
-}
-
-#Damspeed {
-	font-family: Damspeed;	
-	font-size: 22px;
-	color: var(--main-txt-color, #754d1b);
-}
-
-#Dam3Font {
-	font-family: Dam3Font;	
-	font-size: 22px;
-	color: var(--main-txt-color);
-}
-
-
-
-
-
