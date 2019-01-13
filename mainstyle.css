@@ -11,11 +11,11 @@
   --color-mid-gray: #525252; <!-- (old dark) -->
   --color-dark-gray: #2A2728; <!-- (old mid) -->
   
-  --color-bright-pink: #e30472;
+  --color-brightpink: #e30472;
   --color-lightest-pink: #f6e3e2;
   --color-light-pink: #caa09c;
   --color-mid-pink: #bc857a; <!-- (old dark) -->
-  --color-dark-pink: #7d5850; <!-- (old darkest) -->
+  --color-darkpink: #7d5850; <!-- (old darkest) -->
   
   --color-white-brown: #fef8f2;
   --color-lightest-brown: #feebda;
@@ -78,7 +78,7 @@
 #varFontwhite {
 	font-family: var(--graphic-font);	
 	font-size: var(--large-font);
-	color: var(--color-bright-pink);
+	color: var(--color-brightpink);
 }
 
 #varFontlightest {
@@ -102,7 +102,7 @@
 #varFontdark {
 	font-family: var(--written-font);	
 	font-size: var(--small-font);
-	color: var(--color-dark-pink);
+	color: var(--color-darkpink);
 }
 
  
