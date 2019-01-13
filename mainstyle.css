@@ -1,10 +1,76 @@
-/* variables
-:root {
-  --main-bg-color: red;
-  --main-txt-color: blue; 
-  --main-bordrad: 3px; 
-}
+<style id='page-skin-1' type='text/css'><!-- /*
+-----------------------------------------------
+
+----------------------------------------------- */
+
+/* Variable
+   ====================
+
+	<Variable name="colorWhite" description="Color White"
+             type="color" default="#ffffff" value="#ffffff">
+	<Variable name="colorBlack" description="Color Black"
+             type="color" default="#000000" value="#000000">
+	<Variable name="colorWhiteGrey" description="Color White Grey"
+             type="color" default="#a2a2a2" value="#f6f6f6">
+	<Variable name="colorLightestGrey" description="Color Light Grey"
+             type="color" default="#d8d8d8" value="#d8d8d8">
+	<Variable name="colorLightGrey" description="Color Light Grey"
+             type="color" default="#a2a2a2" value="#a2a2a2">
+	<Variable name="colorDarkGrey" description="Dark Grey"
+             type="color" default="#525252" value="#525252">
+	<Variable name="colorMidGrey" description="Color Mid Grey (darkest)"
+             type="color" default="#2A2728" value="#2A2728">	
+	<Variable name="colorLightestPink" description="Lightest Pink"
+             type="color" default="#f6e3e2" value="#f6e3e2">
+	<Variable name="colorLightPink" description="Light Pink"
+             type="color" default="#caa09c" value="#caa09c">
+	<Variable name="colorBrightPink" description="Bright Pink"
+             type="color" default="#b31362" value="#b31362">
+	<Variable name="colorDarkPink" description="Color Dark Pink"
+             type="color" default="#bc857a" value="#bc857a">
+	<Variable name="colorDarkestPink" description="Color Darkest Pink"
+             type="color" default="#7d5850" value="#7d5850">	
+	<Variable name="colorWhiteBrown" description="Color Nearly White Brown"
+             type="color" default="#fef8f2" value="#fef8f2">
+	<Variable name="colorLightestBrown" description="Lightest Brown"
+             type="color" default="#feebda" value="#feebda">
+	<Variable name="colorLightBrown" description="Light Brown"
+             type="color" default="#d8b89a" value="#d8b89a">
+	<Variable name="colorDarkBrown" description="Dark Brown"
+             type="color" default="#754d1b" value="#754d1b">
+	<Variable name="colorNewBrown" description="New Brown"
+             type="color" default="#9a7b59" value="#9a7b59">
+		
+	<Variable name="Dam3Font" description="Doodle Style"
+      type="font" default="Dam3Font, sans-serif, Arial;" value="Dam3Font, sans-serif, Arial;">
+
+	<Variable name="graphicFont" description="Graphic Fancy Font"
+      type="font" default="Cabin Sketch, sans-serif, Arial;" value="Cabin Sketch, sans-serif, Arial;">
+
+	<Variable name="writtenFont" description="Written Font"
+      type="font" default="Just Me Again Down Here, sans-serif, Arial;" value="Just Me Again Down Here, sans-serif, Arial;">
+
+	<Variable name="mainFont" description="Main Font"
+      type="font" default="Open Sans Condensed, sans-serif, Arial;" value="Open Sans Condensed, sans-serif, Arial;">
+
+	<Variable name="largeFontSize" description="Large Font Size"
+      type="automatic" default="30px;">
+
+	<Variable name="medFontSize" description="Medium Font Size"
+      type="automatic" default="20px;">
+
+	<Variable name="smallFontSize" description="Small Main Font Size"
+      type="automatic" default="16px;">
+
+	<Variable name="xsmallFontSize" description="Extra Small Main Font Size"
+      type="automatic" default="14px;">
+
+	<Variable name="letterSpacing" description="Letter Spacing"
+      type="automatic" default=".08em;">
+
+ 
 */
+
 
 /* fonts
 ----------------------------------------------- */
@@ -24,26 +90,2178 @@
 }
 
 
-#Damcursv1 {
-	font-family: Damcursv1;	
-	font-size: 24px;
-	color: red;
+
+
+/* Main area styles
+----------------------------------------------- */
+
+
+
+
+body {
+	font-family: $mainFont;
+	margin: 0;
+	// text-align: center; 		/* Changes footer */
+	min-width: 100%;
+	min-height: 100%;
+	background: $colorLightBrown;      
+	color: $colorBlack;
+	font-size: $smallFontSize;
+}
+
+html {
+	overflow-x: hidden;	
 }
 
 
-#Damspeed {
-	font-family: Damspeed;	
-	font-size: 22px;
-	color: blue;
+#backgroundImage {    			/* Overlay grid background image */
+	background-image: url('https://2.bp.blogspot.com/-BR29kaX83X0/WHCwxt1X-SI/AAAAAAAADfc/9-tG1hxwaAQme61bYIwS1T7gqxYExfdBgCLcB/s1600/bggrid4.png');	
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;	
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 35%;
+	opacity: 0.2;
+	filter:alpha(opacity=20);
 }
 
-#Dam3Font {
-	font-family: Dam3Font;	
-	font-size: 22px;
-	color: pink;
+
+#backgroundImage2 {    			/* doodle background image */
+
+	background: url("https://3.bp.blogspot.com/-KHrzLW1Ft6U/XCqqw9PWqdI/AAAAAAAAEms/38UJLYAS_zgzDyQgO1STF-d8zoDBFjspwCLcBGAs/s1600/PaperBG6.png") repeat scroll 0% 0%;  
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;	
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 20%;
+	opacity: 0.3;
+	filter:alpha(opacity=20);
+}
+
+ .quickedit, .icon-action {
+	display: none;
+} 
+
+
+hr {
+	border-bottom: 1px solid $colorDarkBrown;
+	border-top: 1px dashed $colorDarkPink;
+	width: 98%;
+	height: 2px;	
+}
+
+hr.thumb {
+	height: 3px;
+	width: 98%;
+	background: url(https://3.bp.blogspot.com/-3dSIAodE6kk/XCqqyVzi5HI/AAAAAAAAEm4/bfRxErPkxccO0tYErD471uslKTx0sOVHwCLcBGAs/s1600/hr_image1.png) repeat-x 0 0;
+	// background: url(https://3.bp.blogspot.com/-47qdt-w49Ok/XCqqywhHrXI/AAAAAAAAEm8/1S7ZXIjLPhIyUGvZF6qA7pCwOipjlRyEwCLcBGAs/s1600/hr_image2.png) repeat-x 0 0;
+    border: 0;
+}
+
+
+hr.thumb2 {
+	height: 3px;
+	width: 98%;	
+    border-top: 1px solid $colorDarkGrey;
+	border-bottom: 0;
+//letter-spacing: 15px;	
+}
+
+
+hr.thumb3 {
+	height: 10px;
+	width: 97%;
+	background: url(https://3.bp.blogspot.com/-41__r55LB44/XDqt0geP_JI/AAAAAAAAEsw/S9H_T1vhYwIV1KSAyu_71QNgFUxv-USvACLcBGAs/s1600/hr_image3.png) repeat-x 0 0;	
+    border: 0;
+	opacity: .6;
+}
+
+img {
+	border: 1px;
+	border-radius: 3px;
+}
+
+
+.blog-container {      
+	margin-bottom: 0;
+	margin-top: 1.75em;
+	background-color: rgba(254,235,218,0.8); 	/* $colorLightestBrown; has to be rgba style or causes everything to have opacity */
+	border: 1px dashed $colorDarkBrown;
+    border-radius: 6px;  
+	margin-left: auto;
+	margin-right: auto;	
+	position: center;
+}
+
+.backimage {
+	margin-right: -15px;
+    margin-left: -15px;
+	width:100%;  
+	height:100%;  
+	position:absolute; 
+// background: url("https://1.bp.blogspot.com/-7ZDEnGzulLE/XBSot6g5MqI/AAAAAAAAEkI/l0L5shRF8GUYn-nTAGAI6jzpNRc5S0J8wCLcBGAs/s1600/PaperBG3.png") repeat scroll 0% 0%;   
+// background: url("https://3.bp.blogspot.com/-MZKZBnBezRY/XBQ_kAdcIrI/AAAAAAAAEjw/x9eapY1T9DMQvaMkMw9dlrtHJ7i5Xe8OACLcBGAs/s1600/PaperBG1.png") repeat scroll 0% 0%; 
+	background-size: 50%; 
+	// background: url(https://3.bp.blogspot.com/-k2yyxI31i-8/XBRCCMDnV3I/AAAAAAAAEj8/pNi5owbq0U8BKNdRrI4cnBaHXxxSQtBoQCLcBGAs/s1600/PaperBG2.png) repeat;	
+	opacity: .5;
+	border-radius: 6px; 
+}
+
+
+.site-main {  
+    padding: 12px;
+    margin-bottom: 1em;
+    margin-top: 1em;  
+	margin-left: -2em; 
+	background-color: $colorWhiteBrown;
+// background-color: rgba(254,248,242,0.9); 
+	border: 1px solid $colorDarkBrown;
+	border-radius: 6px;
+//min-height: 1800px;
+}
+
+
+.top-main { 
+    padding: 12px;
+    margin-bottom: 0px;
+    margin-top: 1em;  
+	margin-left: -2em; 
+  	background-color: $colorWhiteBrown;
+// background-color: rgba(254,248,242,0.4); 
+	border: 1px solid $colorDarkBrown;
+	border-radius: 6px;
+}
+
+.post {
+	font-family: $mainFont;
+	font-size: $smallFontSize;
+	margin-left: 1em;
+	margin-right: 1em
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	width: 90%;
+	text-align: center;
+}
+
+
+.pageTitle {
+  margin-top: 10em;
+}
+
+.signature {
+	font-family: $mainFont;
+	font-size: $xsmallFontSize;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	text-align: center;
+}
+
+.backToTop {
+	font-family: $mainFont;
+	font-size: $xsmallFontSize;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+}
+
+
+/* main area */
+#sidebar, .sidebar-module {
+	padding: 8px;
+    background-color: $colorWhiteBrown;
+	border: 1px solid $colorDarkBrown;
+	border-radius: 6px;
+	margin-top: 1em; 
+	margin-bottom: 1em; 
+	opacity: 1;
+	text-align: center;
+}
+
+/* top area */
+.sidebar2-module {
+	padding: 8px;
+    background-color: $colorWhiteBrown;
+	border: 1px solid $colorDarkBrown;
+	border-radius: 6px;
+	margin-top: 1em; 
+	margin-bottom: 0; 
+	opacity: 1;
+	text-align: center;
+}
+
+/* spare area */
+.sidebar3-module {
+	padding: 8px;
+    background-color: $colorWhiteBrown;
+	border: 1px solid $colorDarkBrown;
+	border-radius: 6px;
+	margin-top: 0em; 
+	margin-bottom: 1em; 
+	opacity: 1;
+	text-align: center;
+}
+
+
+
+/* spare bottom minis */
+.site-mini {
+	padding: 8px;
+    background-color: $colorWhiteBrown;
+	border: 1px solid $colorDarkBrown;
+	border-radius: 0px;
+	margin-top: .25em; 
+	margin-bottom: .25em; 
+	margin-left: -2em; 
+	margin-right: 0;
+	opacity: 1;
+	text-align: center;
+}
+
+.site-mini h2, .sidebar-module h2 {
+	margin-top: 0px !important;
+}
+
+h2.barTitle {
+	font-family: $mainFont;
+    color: $colorWhiteBrown;
+    background-color: $colorDarkPink;
+    font-size: 15px;
+    padding: 3px 0px;
+    border: 0px solid white;
+    border-radius: 3px;
+}
+
+#mobileSidebar {
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: center;
+}
+
+
+/*
+.border iframe, iframe {  
+    display:block;
+	overflow-y: hidden; 
+}
+*/
+
+.feed-links {
+	display: none;
+}
+
+
+
+
+/* calendar */
+
+
+
+
+
+/* Top alert bar
+-------------------------------*/
+
+
+.alert, .alert a:link, .alert a:hover, .alert b { 
+	font-family: $mainFont;
+	font-size: 1em;
+	text-align: center;          		
+}
+
+
+/* Thumbnail grid posts ....style="margin-bottom:'+margin_bottom +'em"
+-------------------------------*/
+
+
+.xopostimg {
+	float: left;
+	display: inline;
+	padding: 0;	
+	margin-bottom: 2.5em;
+	margin-left: .5em;
+	margin-right: .5em;	
+//border: 1px solid $colorDarkBrown;
+//border-radius: 3px;
+//clear: both;
+}
+
+
+
+
+.xopostsummary {
+//background-color: black; 
+	text-align: left;
+//	margin: 0;	
+	font-size: 18px;
+	font-family: $mainFont;
+}
+
+
+.jump-link { 
+// margin-top: 1em;
+	text-align: right;	
+	margin-top: 1.5em;
+}
+
+.wrapThumbs {
+	margin-top: -8.5em;
+	background-color: transparant;
+	position: relative;
+	z-index: 15;
+//height: 100%;
+//opacity: .5;
+}
+
+
+.wrapThumbsa {
+//margin: 0;
+	display: block;
+//border: 1px solid $colorDarkBrown;
+//border-radius: 55px;
+    width:100%;
+    color: transparant;
+// overflow:auto;
+//   padding:5px 7px;  
+	line-height: 200px;
+	max-height: 200px;
+  	opacity: 0;	
+	background-color: transparant;  
+}
+
+
+.jump-link a { 
+
+}
+
+
+.jump-link a:hover {
+
+}
+
+
+
+/* Images
+-------------------------------*/
+
+img {
+// vertical-align: super;
+//margin-top: 0;
+//margin-bottom: 0;
+}
+
+.bantop { 				/* Top banner topban */
+	margin-left: 50%;
+    transform: translateX(-50%);
+//	width: 100%;	 
+	text-align: center;
+	min-height: 250px;
+//transform: scale(1);	
+//border: 1px solid $colorDarkBrown;
+//border-radius: 3px;
+}
+
+
+.bantopcontainer {
+	width: 100%;
+	border: 1px solid $colorDarkBrown;
+	border-radius: 3px;
+	display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+	margin-bottom: 1em;
+}
+
+
+img.stay {           		/* Top banner bg kind */
+	height: 8em;
+	position: fixed;
+	
+}
+
+#stayWrap { 				/* Top banner bg kind */
+	float: left;
+}
+
+
+.post a img, .post img {
+	max-width: 95%; 
+}
+
+.centered-and-cropped { 	/* Thumbnails */
+	object-fit: cover;	  
+}
+
+div.tv {					/* Screen stuff \/ */
+	position: relative;
+}
+
+#projscreen {				
+	position: absolute;
+	display:none;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	margin-top: 12%;		/* GIF */
+    
+}
+
+#projscreen2 {				
+	position: absolute;
+	display:none;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	margin-top: -22%;		/* GIF2 */
+    
+}
+
+#projscreen3 {				
+	position: absolute;
+	display:none;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 75%;
+	margin-top: 10.5%;		/* GIF */
+    
+}
+
+#projscreen4 {				
+	position: absolute;
+	display:none;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 72%;
+	margin-top: 8.5%;		/* GIF */
+    
+}
+
+#screen {
+	min-width: 90%;
+}
+
+img.screenback {
+	z-index: -1;
+}
+
+img.screen {
+ 	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	z-index: -1;
+	width: 90%;
+}
+
+img.gametop {
+ 	margin-left: auto;
+    margin-right: auto;
+	position: absolute;	
+	width:80%
+}
+
+
+
+/* Text formatting
+----------------------------------------------- */
+
+
+.emailform {
+	border: 1px solid $colorDarkBrown;
+	padding: .8em;
+    border-radius: 3px;
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	background-color: rgba(254,235,218,0.8);
+}
+
+
+
+.post b, .site-main b, #sidebar b, .sidebar-module b, .top-main b, .site-mini b, .sidebar2-module b, .sidebar3-module b {
+	font-family: $mainFont;
+    font-weight: 700;
+	font-color: $colorBlack; 
+ }
+
+.post i, .site-main i, .top-main i, #sidebar b, .sidebar-module i, .site-mini i, .sidebar2-module i, .sidebar3-module i {
+	font-family: $mainFont;
+    font-weight: 300i; 
+}
+
+blockquote {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid $colorDarkBrown;	
+	color: $colorBlack;
+	background-color: $colorLightBrown;
+	border-radius: 6px;
+	opacity: .6;
+	padding: .75em;
+	letter-spacing: $letterSpacing;
+	width: 82%;
+}
+
+blockquote.blocktwo {
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px dotted $colorDarkPink;	
+	color: $colorBlack;
+	background-color: $colorLightestPink;
+	border-radius: 6px;
+	opacity: .8;
+	padding: 1em;
+	letter-spacing: $letterSpacing;
+	width: 87%;
+}
+
+blockquote.blockspecial {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px dashed $colorDarkPink;	
+	color: $colorBlack;
+	background-color: $colorWhiteGrey;
+	border-radius: 3px;
+	opacity: 1;
+	padding: 8px;
+	letter-spacing: $letterSpacing;
+	width: 65%;
+} 
+
+
+.iframe, iframe, #iframe {
+// border: 2px solid $colorDarkPink;
+//    border-radius: 20px;
+//     -webkit-border-radius: 20px;
+//      -o-border-radius: 20px;
+// position: relative;
+	background-color: $colorLightBrown;
+}
+
+
+.html5-video-player {
+//  border: 2px solid $colorDarkPink !important;
+//	 outline-style: solid !important;
+// outline-color: red !important;
+//      border-radius: 20px;
+//      -webkit-border-radius: 20px;
+//        -o-border-radius: 20px;
+}
+
+
+code {
+	color: $colorBrightPink;
+	background-color: $colorWhite;
+	font-family: $mainFont;
+	font-size: $xsmallFontSize;
+	font-weight: 300i;
+	padding: 4px;
+	letter-spacing: $letterSpacing;
+}
+
+
+
+h2.date-header {
+	margin-bottom: 0;
+	margin-top: 0; 	
+	text-align: right;
+    text-transform: uppercase;
+    color: $dateHeaderColor;
+    font-size: $smallFontSize;
+    font-weight: normal;	
+	float: right;
+	position: relative;
+}
+
+
+.date-outer, .date-posts {
+	margin-bottom: -1em;
+	margin-top: 0; 
+}
+
+
+.post-outer {	
+	margin-right: -3em !important;	
+}
+
+
+h3.post-title {
+	float: left;
+	text-align: left;
+	margin-top: -1em; // 15px
+	margin-bottom: 0; 
+    margin-right: 0;
+	margin-left: -1em;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: .5em;
+    color: $colorLightPink;
+	font-family: $graphicFont;
+	background:rgba(216,216,216,.6);	
+	width: 107%;	
+	border-left: 6px solid $colorDarkPink;
+//border-radius: 3px 0px 0px 3px;	
+}
+
+
+h3.post-title a, h3.post-title a:visited { 
+    color: $colorLightPink;
+	font-family: $graphicFont;
+	font-size: $medFontSize;
+ }
+
+
+h3.post-title a:hover { 
+    color: $colorDarkPink;
+	font-family: $graphicFont;
+	font-size: $medFontSize;
+ }
+
+
+.post-body {
+	// width: 100%;
+	margin-left: -1em;
+	margin-right: -1em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.post-body p {
+	line-height: 1.4em;
+	/* Fix bug in IE5/Win with italics in posts */
+	margin: 0;
+	height: 1%;
+	overflow: visible;
+}
+
+
+.post-body h1, #sidebar h1, .sidebar-module h1, .sidebar2-module h1, .sidebar3-module h1 {
+	font-family: $graphicFont;
+	color: $colorLightPink;
+	font-size: $largeFontSize;	
+	
+}
+
+.post-body h5 {
+font-family: $mainFont;
+    color: $colorWhiteBrown;
+    background-color: $colorDarkPink;
+    font-size: 15px;
+    padding: 3px 0px;
+    border: 0px solid white;
+    border-radius: 3px;
+	margin-top: -3em;	
+}
+
+
+.post-body h2, #sidebar h2, .sidebar-module h2, .sidebar2-module h2, .sidebar3-module h2 {
+	font-family: $mainFont;
+    color: $colorWhiteBrown;
+    background-color: $colorDarkPink;
+    font-size: 15px;
+    padding: 3px 0px;
+    border: 0px solid white;
+    border-radius: 3px;
+	margin-top: 0;
+}
+
+
+
+.post-body h3, #sidebar h3, .sidebar-module h3, .sidebar2-module h3, .sidebar3-module h3 {
+	font-family: $writtenFont;
+	color: $colorBlack;
+	font-size: $largeFontSize;	
+}
+
+.post-body h4, #sidebar h4, .sidebar-module h4, .sidebar2-module h4, .sidebar3-module h4  {
+	font-family: $writtenFont;
+	color: $colorDarkPink;
+	font-size: $largeFontSize;	
+}
+
+.post-body a:link, a:link, #sidebar a:link, .sidebar-module a:link, .sidebar2-module a:link, .sidebar3-module a:link {
+	font-family: $mainFont;
+	color: $colorLightPink;
+	font-size: $smallFontSize;	
+}
+
+.post-body a:active, a:active, #sidebar a:active, .sidebar-module a:active, .sidebar2-module a:active, .sidebar3-module a:active {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $smallFontSize;	
+} 
+
+.post-body a:visited, a:visited, #sidebar a:visited, .sidebar-module a:visited, .sidebar2-module a:visited, .sidebar3-module a:visited {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $smallFontSize;	
+}
+
+.post-body a:hover, a:hover, #sidebar a:hover, .sidebar-module a:hover, .sidebar2-module a:hover, .sidebar3-module a:hover {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $smallFontSize;	
+}
+
+.signature a:link {
+	font-family: $mainFont;
+	color: $colorLightPink;
+	font-size: $xsmallFontSize;	
+}
+
+.signature a:active, {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $xsmallFontSize;	
+} 
+
+.signature a:visited {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $xsmallFontSize;	
+}
+
+.signature a:hover {
+	font-family: $mainFont;
+	color: $colorDarkPink;
+	font-size: $xsmallFontSize;	
+}
+
+
+
+.backToTop a:link {
+	font-family: $mainFont;
+	color: $colorLightGrey;
+	font-size: $xsmallFontSize;	
+}
+
+.backToTop a:active, {
+	font-family: $mainFont;
+	color: $colorMidGrey;
+	font-size: $xsmallFontSize;	
+} 
+
+.backToTop a:visited {
+	font-family: $mainFont;
+	color: $colorLightGrey;
+	font-size: $xsmallFontSize;	
+}
+
+.backToTop a:hover {
+	font-family: $mainFont;
+	color: $colorMidGrey;
+	font-size: $xsmallFontSize;	
+}
+
+
+a.comment-link {
+    padding-left: 14px;
+}
+
+html>body a.comment-link {
+    /* respecified, for ie5/mac's benefit */
+    padding-left: 5px;
+}
+
+
+.post h3 a {
+	text-decoration: none;
+}
+
+a img { 
+   border-width: 0;
+}
+
+.clear {
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+
+
+/* Lists
+-------------------------------*/
+
+.sidebar ul, #comments ul, .sidebar-module li, .sidebar2-module li, .sidebar3-module li {
+    list-style-type: none;
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	text-align: left; 
+	margin-left: -2em;
+}
+
+
+.post li:before, .sidebar li:before, .sidebar-module li:before, .sidebar2-module li:before, .sidebar3-module li:before {
+    content:'\25AA'; 
+    color: $colorBlack; 
+	padding-right: .4em;
+}
+
+
+.post ul {
+	margin-left: 90px;
+    list-style-type: none;
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	text-align: left; 
+}
+
+
+/* back to top
+-------------------------------*/
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: .75em;
+    right: 1.25em;
+    display:none;
+	z-index: 5;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	padding: .25em .5em;
+}
+
+.btn-primary {
+	border-radius: 6px;	
+	border: 1px solid $colorDarkBrown;
+	background-color: rgba(200,132,125,.5);
+	color: white !important;
+}
+
+
+.btn-primary:hover, .btn-primary.hover, .btn-primary:focus, .btn-primary.focus, .btn-primary.active, .open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary.hover, .open>.dropdown-toggle.btn-primary:hover, 
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active.hover, .btn-primary.active:hover {
+	border-radius: 6px;	
+	border: 1px solid $colorLightBrown;
+	background-color: $colorDarkPink;
+	color: white !important;
+}
+
+
+
+
+/* carousel feature main stuff
+-------------------------------*/
+
+
+.site-carousel {  
+    padding: .5em;
+    margin-bottom: 0;
+    margin-top: 1em;  
+	margin-left: -2em; 
+background-color: $colorWhiteBrown;  
+background-image:  
+/* 1) An image              */ url(), 
+/* 2) Gradient   light pink 246, 227, 226  */ linear-gradient(to right, RGB(188, 133, 122), RGB(188, 133, 122)); 
+/* 3) Color(using gradient) linear-gradient(to right, RGB(110, 175, 233), RGB(110, 175, 233)); */ 
+background-size:  
+/* 1) Image size            */ 0,
+/* 2) Gradient size         */ 100% 50%; 
+/* 3) Color size          0;  */ 
+background-position:
+/* 1) Image position        */ 0 0, 
+/* 2) Gradient position     */ 0 50%;
+/* 3) Color position        0 130px; */
+	background-repeat:no-repeat; 
+	border: 1px solid $colorDarkBrown;	
+    border-radius: 0;
+	opacity: 1;  
+}
+
+
+.flexslider {
+	background: $colorLightestBrown !important;
+	border: 1px solid $colorDarkBrown !important;
+	border-radius: 0 !important;
+	zoom: 0 !important;	
+	overflow: hidden !important;
+	margin-bottom: .5em !important;
+	margin-top: .5em !important;
+}
+
+
+.flexslider .slides img,  .flex-control-thumbs img {
+	border-radius: 6px 6px 0 0 !important;
+	transform: scale(1);
+//transform: scale(1.1);
+	z-index: 2;	
+}
+
+
+.flex-caption {
+	border-radius: 0 0 6px 6px !important;
+	// text-transform: uppercase;
+	font-size: 14px !important;
+	padding-left: 5px !important;
+	z-index: 3;
+}
+
+.flexslider li div {
+    position: relative;
+}
+
+.flex-direction-nav a {
+//background-color: green;
+  	height: 390px !important;
+	width: 50px;
+	margin-left: 0;
+	padding: 0;
+	top: 20px !important;
+	font-size: 0;
+}
+
+.flex-direction-nav .flex-next	{
+	right: 0 !important;
+}
+
+.flex-direction-nav .flex-prev {
+  	left: 0 !important;
+}
+
+.flex-direction-nav a.flex-next:before {
+	margin-top: 4em;
+	margin-right: 7px;
+}
+
+.flex-direction-nav a:before {
+	margin-top: 4em;
+	margin-left: 7px;		
+}
+
+.flex-control-nav {
+	border: $colorDarkBrown !important;
+	margin-bottom: 40px !important;
+	z-index: 4;		
+}
+
+
+.flex-control-paging li a:hover, .flex-active {	         
+	background: rgba(255,255,255,.8) !important;
+}
+
+
+.flex-direction-nav a:hover, .flex-direction-nav a:before, .flex-direction-nav a, .flex-direction-nav a:after {
+	color: rgba(216, 184, 154,.7) !important;		
+	text-shadow: none !important;	
+// text-shadow: 1px 1px 0px $colorDarkBrown !important;	
+}
+
+
+
+
+/* carousel post stuff
+-------------------------------*/
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+
+.carousel-inner {
+    margin: 0;
+	padding: 0;
+	max-height: 28.5em;
+  	width: 100%;
+	border-radius: 6px;
+	background: $colorLightBrown;
+	border: 1px solid $colorDarkBrown;	
+//   outline: 4px solid red;
+//outline-offset: 15px;		
+}
+
+
+.item, .item active, img.first-slide {
+//position: relative;
+//width: 100%;	
+}
+
+
+
+.carobg-image {
+	position: absolute;
+	filter: grayscale(.6) brightness(1.2) blur(2px);
+	-webkit-filter: grayscale(.6) brightness(1.2) blur(2px); 
+	height: 100%; 
+	width: 100%;
+	z-index: -1;
+	transform: scale(2);	
+}
+
+
+.carobg2-image {
+	position: absolute;
+	height: 100%; 
+	width: 100%;
+	z-index: -1;
+}
+
+.caro-image {
+	//position: relative;	 
+	z-index: 1;
+	//top: -305px;
+	transform: scale(1.5);
+  	left: 0;
+	clip-path: inset(0% 30% 0% 30%);	
+}
+
+.caro-image2 {
+	//position: relative;	 
+	z-index: 1;
+	//top: -300px;	
+  	left: 0;
+	//clip-path: inset(0% 2% 0% 2%);	
+}
+
+
+
+
+.carocenter {	
+    position: fixed;
+// top: 90%; // 50% for perfect centering
+// left: 10%;
+//  transform: translate(250%, -30%);
+	padding: .5em !important;
+}
+
+
+
+.carousel-caption div {
+    display:table-cell;    
+	text-align:center;
+}
+
+
+.carousel-caption {
+	margin: .25em;
+    position: absolute;
+    z-index: 3;
+    display:table;	
+	left: 0;
+	top: 0;
+//bottom: 7.25em;
+// add opacity background-color: rgba(200,132,125,.9);
+	background-color: $colorDarkPink;
+	color: white;
+	font-family: $mainFont;
+	font-size: 1em;	
+	border-radius: 6px;	
+	border: 1px solid $colorDarkBrown;
+}
+
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none;
+	 position:absolute;
+     top: 0;	
+}
+
+.carousel-control.left {
+	left:1%;
+	margin-left: -2em;
+}
+
+.carousel-control.right {
+	right:1%;
+	margin-right: -2em;
+}
+
+.glyphicon-chevron-right:before,
+.glyphicon-chevron-left:before {
+	color: white;
+
+}
+
+
+.carousel-indicators {
+	bottom:-2.5em;
+	margin-bottom: 1em;
+}
+
+
+.carousel-indicators li {
+  background-color: $colorLightestBrown;
+  background-color: rgba(70,70,70,.5);
+}
+
+
+.carousel-indicators .active {
+  background-color: $colorDarkPink;
+}
+
+
+#myCarousel li:before  {
+    content: none;  
+}
+
+
+
+#carouselButtons {
+	position: absolute;
+    margin-left: .25em;    
+    bottom: .25em;
+	z-index: 5;	
+}
+
+#playButton, #pauseButton {
+	border-radius: 6px;	
+	border: 1px solid $colorDarkBrown;
+// background-color: rgba(200,132,125,.9);
+	background-color: $colorDarkPink;
+}
+
+
+
+/* Carousel post fade
+-------------------------------*/
+
+
+
+.carousel-inner > .item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: none;
+       -o-transition: none;
+          transition: none;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+}
+
+
+
+.carousel-inner > .item:first-of-type {
+  position: relative;
+}
+
+
+
+.carousel-inner > .active {
+  opacity: 1;
+  z-index: 3;
+}
+
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  -webkit-transition: opacity 0.6s ease-in-out;
+       -o-transition: opacity 0.6s ease-in-out;
+          transition: opacity 0.6s ease-in-out;
+  opacity: 1;
+  left: 0;
+  z-index: 2;
+}
+
+
+.carousel-inner > .active.left,
+.carousel-inner > .active.right {
+  z-index: 1;
+}
+
+
+.carousel-control {
+  z-index: 4;
+}
+
+
+
+
+/* Footer, Comments, Cookies, Pager
+-------------------------------*/
+
+#blog-pager-newer-link {
+	margin-left: 2em;
+	margin-bottom: 1em;
+	text-align: left; 
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	font-size: $xsmallFontSize;
+	
+ }
+ 
+#blog-pager-older-link {
+	margin-right: 2em;
+	margin-bottom: 1em;
+	text-align: right;
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	font-size: $xsmallFontSize; 
+	
+ }
+ 
+#blog-pager {  
+	position: relative;
+	margin-bottom: 1em;
+	text-align: center; 
+	color: $colorMidGrey;
+	font-family: $mainFont;
+	font-size: $xsmallFontSize;
+	
+ }
+
+
+.feed-links { 
+    clear: both;
+    line-height: 2.5em;
+    margin-bottom: 0.5em;
+    margin-$startSide: 1.8em;
+}
+
+
+#comments {
+	display: none;
+    width: 97%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #ffffff;
+	border-radius: 3px;
+}
+
+.comments .continue a {
+	font-family: $mainFont;
+	font-weight: lighter;
+	float: left;
+	margin-left: 3.5em;
+}
+
+#comments h4 {
+    margin-top: 0;
+    font-size: 1em;
+	float: left;
+	margin-left: 1em;
+}
+
+.post-footer {
+    font-size: $mainFontSize;
+    color: $colorMidGrey;	
+}
+
+.uncustomized-post-template .post-footer {
+    text-align: $endSide;
+}
+
+.uncustomized-post-template .post-footer .post-author,
+.uncustomized-post-template .post-footer .post-timestamp {
+    display: block;
+    float: $startSide;
+    text-align: $startSide;
+    margin-$endSide: 4px;
+}
+
+p.comment-author {
+    font-size: $smallFontSize;
+}
+
+
+.comments .comments-content .user {
+	font-size: $smallFontSize;
+	font-weight: lighter;
+}
+
+
+.comments .avatar-image-container img {
+	display: none;
+}
+
+.uncustomized-post-template .post-footer .post-author, .uncustomized-post-template .post-footer .post-timestamp {
+	float: left;
+	margin-top: 10px;	
+}
+
+.deleted-comment {
+    font-style:italic;
+    color: $colorMidGrey;
+}
+
+.comment-body p {
+    line-height: 1.4em;
+}
+
+.footer {
+	text-align: center;
+	position: absolute;
+    width: 100%;
+    left: 0;
+	margin-top: 1em;
+	border-radius: 0;
+	font-family: $mainFont;	
+	font-size: $xsmallFontSize;	
+	padding-bottom: 1em;
+	padding-top: 0;
+  	color: $colorMidGrey;
+	background-color: $colorLightestBrown;
+  	border-top: 1px solid $colorDarkBrown;
+	opacity: .9;
+}
+
+
+.cookie-choices-info, .cookie-choices-inner { 
+	padding-top: .3em!important;
+	padding-bottom: .3em!important;
+}
+
+
+/* random posts style
+-------------------------------*/
+
+
+#random-posts li {
+	width:100%;		
+//background-color: $colorWhiteBrown;
+    margin-bottom: 3px;
+    border-bottom: 1px solid $colorLightestGrey;
+    padding: 4px;
+	margin-right: -1em;
+}
+
+h2.title2  {
+	font-family: Open Sans Condensed, sans-serif, Arial;
+    color: $colorWhiteBrown;
+	background-color: $colorDarkPink;
+    font-size: 15px;
+	padding: 3px 0px;
+	border: 0px solid white;
+	border-radius: 3px;
+}
+
+
+#random-posts li:before {
+	content: none;
+}
+
+
+#random-posts img {
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    width: 75px;
+    height: 75px;
+    background-color: $colorLightBrown;
+    padding: 3px;
+    transition: all 0.2s linear 0s;
+}
+
+#random-posts img:hover {
+    opacity: 0.6;
+}
+
+
+ul#random-posts {
+	width: 100%;
+    list-style-type: none;
+	margin-left: 0;
+	padding-left: 15px;	
+}
+
+#random-posts a {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0px 0px 5px;
+	margin-top: 0px;
+}
+
+#random-posts a:hover {
+    text-decoration: none;
+}
+
+.random-summary {
+    font-size: 11px;
+    background: none;
+    padding: 1px;
+	margin-top: -2em;
+//margin-right: 8px;
+}
+
+
+
+/* search #BlogSearch1:not(*:root) */
+-------------------------------
+
+
+#BlogSearch1 {	
+//float: left;
+//width: 50%;
+  	margin-top: 0px;
+	margin-bottom: 5px;
+//	margin-left: 430%;
+	margin-right: 0;	
+}
+
+.searchBlog table.gsc-search-box {
+	width: 150px;		
+	margin-top: -30px;
+	margin-left: 230px;
+	margin-bottom: 0;	
+	opacity: .8;
+}
+
+.searchBlog h2, .searchBlog .h2 {
+  	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.searchBlog {
+	padding: 0;
+	margin: 0;	
+}
+
+.searchBlog form.gsc-search-box {
+  	padding: 0;
+  	margin: 0;
+}
+
+.searchBlog input.gsc-input {
+  	border: 1px solid $colorLightGrey;
+	border-radius: 3px;	
+  	margin: 0;
+	background-color: white;
+	font-size: 15px;
+	color: $colorDarkGrey;	
+	width: 100%;	
+}
+
+
+.searchBlog table.gsc-search-box td.gsc-input {
+	padding: 0;
+}
+    
+
+button, input, select, textarea {	
+	background-color: white;
+	color: $colorLightGrey;
+	font-size: 14px;
+	border: 1px solid $colorDarkGrey;
+	border-radius: 3px;	
+}
+
+
+
+/* Nav bar 2 styles
+-------------------------------*/
+
+
+.siteTools .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: $colorDarkPink !important;
+	color: white !important;
+}
+
+
+
+.siteTools {
+	color: $colorBlack;	
+	background-color: $colorLightestBrown;
+	border: 1px solid $colorDarkestPink !important;	
+	border-radius: 3px;
+//margin-bottom: 15em;
+	margin-top: -1em;
+ 	min-height: 3em;
+	height: 3em; 	
+	width: 100%;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px; 
+	padding-bottom: 0px;
+//overflow: hidden;
+	float: none !important;
+	z-index: 6;
+	opacity: .9;
+}
+
+.siteTools .navbar-brand { 
+	color: $colorDarkestPink;
+	font-size: $smallFontSize;
+	font-family: $graphicFont;
+	padding-top: 10px;
+}
+
+.siteTools .navbar-brand .houseIcon {
+	padding-top: 0;
+	padding: 0;
+	margin-top: -.5em;
+	margin-left: -5px;
+	opacity: .7;
+	width: 80%		
+}
+
+.siteTools .navbar-brand .houseIcon:focus, .siteTools .navbar-brand .houseIcon:hover{
+	opacity: .9;
+}
+
+.siteTools .post-body a:link, .siteTools a:link, .siteTools #sidebar a:link, .siteTools .sidebar-module a:link, .sidebar2-module a:link, .sidebar3-module a:link {
+	font-size: 18px;
+}
+
+
+.siteTools .nav > li > a {
+	padding: 9px 10px 10px 10px; // height first number for solid part
+//   font-size: 1.5em;
+	letter-spacing: 0px;
+	margin-left: -5px;
+	border-right: 1px dotted $colorDarkPink;
+	border-left: 1px dotted $colorDarkPink;
+}
+
+.siteTools .nav>li>a:focus, .nav>li>a:hover { 	
+	background-color: $colorLightPink;
+	color: $colorLightestBrown;
+}
+
+.siteTools .navbar-nav>.open>a, .siteTools .navbar-nav>.open>a:focus, .siteTools .navbar-nav>.open>a:hover, .open .dropdown-toggle {
+	color: $colorLightestBrown;
+	background-color: $colorLightPink;
+	font-family: $mainFont;
+	border-right: 1px dotted $colorDarkPink;
+	border-left: 1px dotted $colorDarkPink;
+}
+
+
+.siteTools .dropdown-menu, .dropdown-menu li  {	
+	padding-left: .1em;
+}
+
+.siteTools .dropdown-menu li a:hover {
+	background-color: $colorDarkPink;
+	color: $colorLightestBrown;
+	font-family: $mainFont;
+}
+
+
+.siteTools .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: $colorDarkPink;
+}
+
+.siteTools .navbar-nav>li>.dropdown-menu, .navbar2-nav>li>.dropdown-menu {
+	z-index: 6;
+	
+}
+
+
+.siteTools .navbar-toggle .icon-bar {
+	display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+	background-color: $colorLightGrey;
+}
+
+.siteTools .navbar-toggle {
+    position: relative;
+    float: right;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+    margin-top: 5px;
+  	margin-right: 15px;
+	margin-bottom: 5px;
+    background-color: transparent;
+	color: black;
+// background-image: none;
+//  border: 1px solid transparent;
+// border-radius: 4px;
+}
+
+.siteTools .navbar-toggle:focus, .siteTools .navbar-toggle:hover {
+	background-color: $colorWhiteBrown;
 }
 
 
 
 
 
+
+/*selection highlight colors */
+
+::-moz-selection {
+     background-color: $colorLightPink;
+     color: $colorLightestBrown;
+}
+
+::selection {
+     background-color: $colorLightPink;
+     color: $colorLightestBrown;
+}
+
+
+/* .siteTools form[role="search"] {
+  margin: 4px 0;
+}
+    
+.siteTools form[role="search"] input {
+  padding: 3px 5px;
+  height: 25px;
+}
+    
+.siteTools form[role="search"] button[type="submit"] {
+  padding: 3px 5px;
+  height: 25px;
+} */
+
+
+
+/* Nav bar styles
+-------------------------------*/
+
+
+
+.navbar-default .navbar-brand {
+	color: $colorBlack;
+	font-size: 1.5em;
+	font-family: $graphicFont;
+//padding-top: .9em;
+}
+
+.navbar {
+	color: $colorBlack;
+	font-family: $mainFont;
+	margin-bottom: 0;
+//background-color: $colorLightestBrown;
+	border: 1px solid $colorDarkBrown;
+	font-size: .85em !important;
+	letter-spacing: .25em;		
+	float: left;	   
+}
+
+.navbar-default {
+	background: rgba(254, 235, 218, 0.8);
+	z-index: 20;
+}
+
+.navbar-default .navbar-header {
+  	margin-bottom: -1em;	
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: $colorWhiteBrown;
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .open .dropdown-toggle {
+	color: white !important;
+	background-color: $colorDarkBrown;
+	font-family: $mainFont;
+}
+
+.dropdown-menu, .dropdown-menu li  {	
+	padding-left: .1em;
+}
+
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: $colorDarkBrown;
+}
+
+.dropdown-menu li a:hover {
+	background-color: $colorDarkBrown;
+	color: $colorLightestBrown;
+	font-family: $mainFont;
+}
+
+.navbar-nav>li>.dropdown-menu, .navbar2-nav>li>.dropdown-menu {
+	z-index: 6;
+}
+
+.navbar-default .navbar-nav>li>a {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 8px;
+	padding-bottom: 3px;
+}
+
+.navbar-default .navbar-toggle {	
+	border-color: transparent;
+}
+
+.navbar li:before {
+    content: none; 
+}
+
+
+/* Devices
+-------------------------------*/
+
+
+@viewport{
+	zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+#myDropDown {
+	display: none;
+}
+
+#mobileSidebar {
+	display: none;
+}
+
+.hideMini {
+	display: none;
+}
+
+
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+#myDropDown {
+	display: none;
+}
+
+#mobileSidebar {
+	display: none;
+}
+
+.siteTools .nav > li > a {
+	padding: 9px 10px; // height first number for solid part    
+}
+
+.wrapThumbs {
+	margin-top: -10em;
+}
+
+.hideMini {
+	display: none;
+}
+
+.bantop { 				/* Top banner */
+  	margin-left: 49%;
+// transform: translateX(-50%);	
+}
+
+
+
+}
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+.wrapThumbs {
+	margin-top: -8.5em;
+}
+
+#mobileAd {
+	width: 20%;
+}
+
+#myButton {
+	display: none;
+}
+
+#iglIcon {
+	width: 35%;
+}
+
+#discordBut {
+	width: 30%;
+}
+
+#submitBut {
+	width: 35%;
+}
+
+
+#pcSidebar {
+	display: none;
+}
+
+
+#backgroundImage2 {
+	background-size: 35%;
+}
+
+
+#BlogSearch1 {	
+//width: 30%;
+}
+
+.siteTools .nav > li > a {
+	padding: 10px 10px; // height first number for solid part  
+}
+
+.blog-container {
+//padding: 0;
+//margin-left: -1.5em;
+//margin-right: -1.5em;	
+}
+
+.backimage {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.col-sm-9 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	overflow-x: hidden;	
+}
+
+.site-main, .top-main, .site-carousel, .site-mini {  
+//margin-left: 0;  
+}
+
+
+.carousel-control.left {
+	left:3%;
+}
+
+.carousel-control.right {
+	right:3%;
+}
+
+.searchBlog table.gsc-search-box {
+	margin-top: -25px;
+}
+
+.bantop { 				/* Top banner */
+  	margin-left: 48%;
+// transform: translateX(-50%);	
+}
+
+
+}
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+.searchBlog table.gsc-search-box {
+	width: 150px;
+	margin-left: 240px;
+	margin-top: -33px;
+}
+
+.wrapThumbs {
+	margin-top: -10em;
+}
+
+
+/*
+ul.navbar-nav, ul.navbar-nav li {
+ 	display:inline;
+	float: left;
+//margin-left: 35px;
+	margin-right: 0px;
+	margin-top: -25px;
+	padding: 0;
+}
+
+ul.navbar-nav {
+	margin-left: 70px;
+} */
+
+
+.siteTools .navbar-nav>li>.dropdown-menu {
+	background-color: $colorLightestBrown;
+}
+
+.siteTools .navbar-nav>li>a {
+	background-color: $colorLightestBrown;	
+}
+
+.siteTools .nav>li>a:focus, .siteTools .nav>li>a:hover {
+	background-color: $colorLightPink;	
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	background-color: transparent;	
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
+	background-color: $colorWhiteBrown;
+}
+
+
+/* 
+#BlogSearch1 {	
+	width: 30%;
+	margin-top: -52px;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 60px;	
+} */
+
+
+
+.bantop { 				/* Top banner */
+  	margin-left: 46%;
+// transform: translateX(-50%);	
+}
+
+
+.xopostimg {
+//float: none;
+	margin-bottom: 1.75em;	
+}
+
+
+.xopostsummary { 
+//text-align: left;
+//margin-left: 5px;
+	margin-top: .75em;	
+}
+
+
+.siteTools .nav > li > a {
+	padding: 10px 10px; // height first number for solid part
+}
+
+#myButton {
+	display: none;
+}
+
+#discordBut {
+	width: 20%;
+}
+
+#submitBut {
+	width: 25%;
+}
+
+#iglIcon {
+	width: 20%;
+}
+
+#pcSidebar {
+	display: none;
+}
+
+h3.post-title {
+	width: 110%;	
+}
+
+.post-outer {	
+	margin-right: -1.5em !important;	
+}
+
+#backgroundImage2 {
+	background-size: 40%;
+}
+
+.blog-container {
+	padding: 0;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+
+
+.backimage {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.col-sm-9 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mobileAd {
+	width: 13%;
+}
+
+body {
+	overflow-x: hidden;	
+}
+
+.site-main, .top-main, .site-carousel, .site-mini {  
+     margin-left: 0;  
+}
+
+.carousel-control.left {
+	left:2%;
+}
+
+.carousel-control.right {
+	right:2%;
+}
+
+}
+
+
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+
+.flex-direction-nav a.flex-next:before {
+	margin-top: 2em;
+}
+
+.flex-direction-nav a:before {
+	margin-top: 2em;	
+}
+
+
+.wrapThumbs {
+	margin-top: -20em;
+}
+
+.wrapThumbsa {
+	line-height: 300px;
+	max-height: 300px;	
+}
+
+
+.searchBlog table.gsc-search-box {
+	width: 120px;
+	margin-left: 50px;	
+	margin-top: -30px;
+}
+
+h3, .h3 {
+	font-size: 21px;
+}
+
+.blog-container {
+	margin-top: 2.5em;
+}
+
+.navbar-default .navbar-brand {
+	color: $colorBlack;
+	font-size: 1em;
+	font-family: $mainFont;
+}
+
+
+
+.bantop { 				/* Top banner */
+  	margin-left: 47%;
+// transform: translateX(-50%);		
+}
+
+#myButton {
+	display: none;
+}
+
+#pcSidebar {
+	display: none;
+}
+
+#discordBut {
+	width: 30%;
+}
+
+#submitBut {
+	width: 35%;
+}
+
+#iglIcon {
+	width: 30%;
+}
+
+
+.siteTools .nav > li > a {
+	padding: 10px 10px; // height first number for solid part
+}
+
+h3.post-title {
+	width: 117%;	
+}
+
+#backgroundImage2 {
+	background-size: 50%;
+}
+
+.post-outer {	
+	margin-right: -0 !important;	
+}
+
+.blog-container {
+	padding: 0;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+
+
+.xopostimg {
+	float: none;
+	margin-bottom: 1.75em;	
+}
+
+
+.xopostsummary { 
+	text-align: left;
+	margin-left: 5px;
+	margin-top: .75em;	
+}
+
+
+.backimage {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.col-sm-9 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mobileAd {
+	width: 22%;
+}
+
+
+body {
+	overflow-x: hidden;	
+}
+
+.site-main, .top-main, .site-carousel, .site-mini {  
+     margin-left: 0;  
+}
+
+.carousel-control.left {
+	left:7%;
+}
+
+.carousel-control.right {
+	right:7%;
+}
+
+
+}
+
+ 
+]]>
+--></style>
