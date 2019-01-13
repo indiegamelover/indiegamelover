@@ -78,7 +78,7 @@
 #varFontwhite {
 	font-family: var(--graphic-font);	
 	font-size: var(--large-font);
-	color: var(--color-bright-pink);
+	color: #e30472;
 }
 
 #varFontlightest {
