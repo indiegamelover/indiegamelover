@@ -27,6 +27,8 @@
 #Damcursv1 {
 	font-family: Damcursv1;	
 	font-size: 24px;
+	color: var(--main-txt-color);
+	color: #754d1b;
 }
 
 #Damspeed {
