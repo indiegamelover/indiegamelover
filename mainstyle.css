@@ -67,12 +67,16 @@
 }
 
 #Dam3Font {
-	font-family: var(--graphic-font);	
+	font-family: Dam3Font;	
 	font-size: 22px;
 	color: pink;
 }
 
-
+#testVarFont {
+	font-family: var(--graphic-font);	
+	font-size: var(--xsmall-font);
+	color: var(--bright-pink);
+}
 
 
 
