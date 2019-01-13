@@ -1,5 +1,12 @@
-<style>
-<Variable name="colorWhite" description="Color White"
+<![CDATA[/*
+-----------------------------------------------
+
+----------------------------------------------- */
+
+/* Variable
+   ====================
+
+	<Variable name="colorWhite" description="Color White"
              type="color" default="#ffffff" value="#ffffff">
 	<Variable name="colorBlack" description="Color Black"
              type="color" default="#000000" value="#000000">
@@ -60,7 +67,12 @@
 
 	<Variable name="letterSpacing" description="Letter Spacing"
       type="automatic" default=".08em;">
-	  </style>
+
+ 
+*/ ]]>
+		
+	
+
 
 @font-face {
     font-family: Dam3Font;
