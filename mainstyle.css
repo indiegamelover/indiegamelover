@@ -73,9 +73,9 @@
 }
 
 #testVarFont {
-	font-family: var(--graphic-font);	
-	font-size: var(--xsmall-font);
-	color: var(--bright-pink);
+	font-family: var(--written-font);	
+	font-size: var(--large-font);
+	color: var(--color-bright-pink);
 }
 
 
