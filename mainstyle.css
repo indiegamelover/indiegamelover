@@ -28,7 +28,11 @@
 	font-family: Damcursv1;	
 	font-size: 24px;
 	color: var(--main-txt-color);
-	
+}
+
+/* IE */
+#Damcursv1 {
+	color: #754d1b;
 }
 
 #Damspeed {
