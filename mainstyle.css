@@ -1,5 +1,8 @@
 /* variables */
 :root {
+	
+  --primary-color: rgba(241,196,15 ,1);
+	
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-gray: #f6f6f6;
@@ -75,7 +78,7 @@
 #testVarFont {
 	font-family: var(--written-font);	
 	font-size: var(--large-font);
-	color: var(--color-bright-pink);
+	color: var(--color-mid-brown);
 }
 
 
