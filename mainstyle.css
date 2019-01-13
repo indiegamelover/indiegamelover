@@ -1,23 +1,23 @@
-/* variables
+/* variables */
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-gray: #f6f6f6;
   --color-lightest-gray: #d8d8d8;
   --color-light-gray: #a2a2a2;
-  --color-mid-gray: #525252; (old dark)
-  --color-dark-gray: #2A2728; (old mid)
+  --color-mid-gray: #525252; <!-- (old dark) -->
+  --color-dark-gray: #2A2728; <!-- (old mid) -->
   
   --color-bright-pink: #b31362;
   --color-lightest-pink: #f6e3e2;
   --color-light-pink: #caa09c;
-  --color-mid-pink: #bc857a; (old dark)
-  --color-dark-pink: #7d5850; (old darkest)
+  --color-mid-pink: #bc857a; <!-- (old dark) -->
+  --color-dark-pink: #7d5850; <!-- (old darkest) -->
   
   --color-white-brown: #fef8f2;
   --color-lightest-brown: #feebda;
   --color-light-brown: #d8b89a;
-  --color-mid-brown: #9a7b59; (old new)
+  --color-mid-brown: #9a7b59; <!-- (old new) -->
   --color-dark-brown: #754d1b;
   
   --graphic-font: Cabin Sketch, sans-serif, Arial;
@@ -29,8 +29,11 @@
   --small-font: 16px;
   --xsmall-font: 14px;
   --letter-spacing-reg: .8em;
+  
+  --small-border-radius: 3px;
+  --large-border-radius: 3px;
 }
-*/
+
 
 /* fonts
 ----------------------------------------------- */
@@ -64,7 +67,7 @@
 }
 
 #Dam3Font {
-	font-family: Dam3Font;	
+	font-family: var(--graphic-font);	
 	font-size: 22px;
 	color: pink;
 }
