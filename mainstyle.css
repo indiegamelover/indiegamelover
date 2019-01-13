@@ -75,11 +75,32 @@
 	color: pink;
 }
 
-#testVarFont {
-	font-family: var(--written-font);	
+#varFontwhite {
+	font-family: var(--graphic-font);	
 	font-size: var(--large-font);
-	color: var(--color-lightest-pink);
+	color: var(--color-white-gray);
 }
 
+#varFontlightest {
+	font-family: var(--written-font);	
+	font-size: var(--xsmall-font);
+	color: var(--color-lightest-gray);
+}
 
+#varFontlight {
+	font-family: var(--main-font);	
+	font-size: var(--small-font);
+	color: var(--color-light-gray);
+}
 
+#varFontmid {
+	font-family: var(--main-font);	
+	font-size: var(--small-font);
+	color: var(--color-mid-gray);
+}
+
+#varFontdark {
+	font-family: var(--written-font);	
+	font-size: var(--small-font);
+	color: var(--color-dark-gray);
+}
