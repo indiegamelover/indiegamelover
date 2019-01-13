@@ -11,7 +11,7 @@
   --color-mid-gray: #525252; <!-- (old dark) -->
   --color-dark-gray: #2A2728; <!-- (old mid) -->
   
-  --color-mood-pink: #b31362;
+  --color-bright-pink: #e30472;
   --color-lightest-pink: #f6e3e2;
   --color-light-pink: #caa09c;
   --color-mid-pink: #bc857a; <!-- (old dark) -->
@@ -78,7 +78,7 @@
 #testVarFont {
 	font-family: var(--written-font);	
 	font-size: var(--large-font);
-	color: var(--color-mood-pink);
+	color: var(--color-lightest-pink);
 }
 
 
