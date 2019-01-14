@@ -116,15 +116,10 @@
 }
 
 #varFontdark {
-	font-family: var(--written-font);	
-	font-size: var(--small-font);
-	color: var(--color-dark-pink);
+	font-family: var(--written-font), Just Me Again Down Here, sans-serif, Arial;	
+	font-size: var(--small-font), 16px;
+	color: var(--color-dark-pink), #7d5850;
 }
 
-#varFontdark {
-	font-family: Just Me Again Down Here, sans-serif, Arial;	
-	font-size: 16px;
-	color: #7d5850;
-}
 
  
