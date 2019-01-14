@@ -30,25 +30,25 @@
 }
 
 #varFontlight {
-	font-family: var(--main-font);	
+	font-family: var(--damspeed-font);	
 	font-size: var(--small-font);
 	color: var(--color-light-brown);
 }
 
 #varFontmid {
-	font-family: var(--main-font);	
+	font-family: var(--damcursv1-font);	
 	font-size: var(--small-font);
 	color: var(--color-mid-brown);
 }
 
 #varFontdark {
-	font-family: var(--written-font), Just Me Again Down Here, sans-serif, Arial;	
+	font-family: var(--dam3-font), Just Me Again Down Here, sans-serif, Arial;	
 	font-size: var(--small-font), 16px;
 	color: var(--color-dark-brown), #7d5850;
 }
 
 #varFontdark { /* fallback */
-	font-family: Just Me Again Down Here, sans-serif, Arial;	
+	font-family: dam3font	
 	font-size: 16px;
 	color: #7d5850;
 }

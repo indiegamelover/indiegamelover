@@ -1,15 +1,34 @@
 /* variables */
 :root {
 	
-  --primary-color: rgba(241,196,15 ,1);
-	
+  /* shades of gray */
   --color-white: #ffffff;
+  --color-white-r8: rgba(255,255,255,.8);
+  --color-white-r6: rgba(255,255,255,.6);
+  
   --color-black: #000000;
+  --color-white-r8: rgba(0,0,0,.8);
+  --color-white-r6: rgba(0,0,0,.6);
+  
   --color-white-gray: #f6f6f6;
+  --color-white-gray-r8: rgba(246,246,246,.8);
+  --color-white-gray-r6: rgba(246,246,246,.6);
+  
   --color-lightest-gray: #d8d8d8;
+  --color-lightest-gray-r8: rgba(216,216,216,.8);
+  --color-lightest-gray-r6: rgba(216,216,216,.6);
+  
   --color-light-gray: #a2a2a2;
+  --color-light-gray-r8: rgba(162,162,162,.8);
+  --color-light-gray-r6: rgba(162,162,162,.6);
+  
   --color-mid-gray: #525252; /* (old dark) */
+  --color-mid-gray-r8: rgba(82,82,82,.8);
+  --color-mid-gray-r6: rgba(82,82,82,.6);
+  
   --color-dark-gray: #2A2728; /* (old mid) */
+  --color-dark-gray-r8: rgba(42,39,40,.8);
+  --color-dark-gray-r6: rgba(42,39,40,.6);
   
   /* shades of pink */
   --color-bright-pink-r8: rgba(179,19,98,.8);
@@ -32,23 +51,44 @@
   --color-dark-pink-r8: rgba(125,88,80,.8);
   --color-dark-pink-r6: rgba(125,88,80,.6);
   
-  
+  /* shades of brown */
   --color-white-brown: #fef8f2;
-  --color-lightest-brown: #feebda;
-  --color-light-brown: #d8b89a;
-  --color-mid-brown: #9a7b59; /* (old new) */
-  --color-dark-brown: #754d1b;
+  --color-dark-pink-r8: rgba(254,248,242,.8);
+  --color-dark-pink-r6: rgba(254,248,242,.6);
   
+  --color-lightest-brown: #feebda;
+  --color-dark-pink-r8: rgba(254,235,218,.8);
+  --color-dark-pink-r6: rgba(254,235,218,.6);
+  
+  --color-light-brown: #d8b89a;
+  --color-dark-pink-r8: rgba(216,184,154,.8);
+  --color-dark-pink-r6: rgba(216,184,154,.6);
+  
+  --color-mid-brown: #9a7b59; /* (old new) */
+  --color-dark-pink-r8: rgba(154,123,89,.8);
+  --color-dark-pink-r6: rgba(154,123,89,.6);
+  
+  --color-dark-brown: #754d1b;
+  --color-dark-pink-r8: rgba(117,77,27,.8);
+  --color-dark-pink-r6: rgba(117,77,27,.6);
+  
+  
+  /* regular google fonts and properties */
   --graphic-font: Cabin Sketch, sans-serif, Arial;
   --written-font: Just Me Again Down Here, sans-serif, Arial;
   --main-font: Open Sans Condensed, sans-serif, Arial;
+  --dam3-font: dam3font;
+  --damcursv1-font: damcursv1;
+  --damspeed-font: damspeed;
   
   --large-font: 30px;
   --med-font: 20px;
   --small-font: 16px;
   --xsmall-font: 14px;
   --letter-spacing-reg: .8em;
+  --letter-spacing-small: .25em;
   
+  /* other junk */
   --small-border-radius: 3px;
   --large-border-radius: 6px;
 }
@@ -57,16 +97,16 @@
 /* fonts
 ----------------------------------------------- */
 @font-face {
-    font-family: Dam3Font;
+    font-family: dam3font;
     src: url(https://indiegamelover.github.io/indiegamelover/Dam3-Regular.woff) format('woff');
 }
 
 @font-face {
-	font-family: Damcursv1;
+	font-family: damcursv1;
     src: url(https://indiegamelover.github.io/indiegamelover/Damcursv-Regular.woff) format('woff');
 }
 
 @font-face {
-	font-family: Damspeed;
+	font-family: damspeed;
     src: url(https://indiegamelover.github.io/indiegamelover/Damspeed-Regular.woff) format('woff');
 }
