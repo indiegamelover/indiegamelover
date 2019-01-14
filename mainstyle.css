@@ -48,7 +48,7 @@
 }
 
 #varFontdark { /* fallback */
-	font-family: dam3font	
+	font-family: dam3font;	
 	font-size: 16px;
 	color: #7d5850;
 }
