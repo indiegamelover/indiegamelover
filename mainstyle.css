@@ -1,21 +1,42 @@
-#Damcursv1 {
-	font-family: Damcursv1;	
-	font-size: 24px;
-	color: red;
-}
-
-
-#Damspeed {
-	font-family: Damspeed;	
+#damcursv1 { /* fallback */
+	font-family: dam3font;	
 	font-size: 22px;
-	color: blue;
+	color: #000000;
 }
 
-#Dam3Font {
-	font-family: Dam3Font;	
-	font-size: 22px;
-	color: pink;
+#damcursv1 {
+	font-family: var(--damcursv1-font);	
+	font-size: var(--large-font);
+	color: var(--color-black);
 }
+
+#damspeed { /* fallback */
+	font-family: dam3font;	
+	font-size: 22px;
+	color: #000000;
+}
+
+#damspeed {
+	font-family: var(--damspeed-font);	
+	font-size: var(--large-font);
+	color: var(--color-black);
+}
+
+
+
+#dam3Font { /* fallback */
+	font-family: dam3font;	
+	font-size: 22px;
+	color: #000000;
+}
+
+#dam3Font {
+	font-family: var(--dam3-font);
+	font-size: var(--large-font);
+	color: var(--color-black);
+}
+
+
 
 #varFontwhite {
 	font-family: var(--graphic-font);	
@@ -42,7 +63,7 @@
 }
 
 #varFontdark {
-	font-family: var(--dam3-font), Just Me Again Down Here, sans-serif, Arial;	
+	font-family: var(--dam3-font);	
 	font-size: var(--small-font), 16px;
 	color: var(--color-dark-brown), #7d5850;
 }

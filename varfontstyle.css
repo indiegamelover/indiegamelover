@@ -77,11 +77,12 @@
   --graphic-font: Cabin Sketch, sans-serif, Arial;
   --written-font: Just Me Again Down Here, sans-serif, Arial;
   --main-font: Open Sans Condensed, sans-serif, Arial;
-  --dam3-font: dam3font;
-  --damcursv1-font: damcursv1;
-  --damspeed-font: damspeed;
+  --dam3-font: dam3font, Just Me Again Down Here, sans-serif, Arial;
+  --damcursv1-font: damcursv1, Just Me Again Down Here, sans-serif, Arial;
+  --damspeed-font: damspeed, Just Me Again Down Here, sans-serif, Arial;
   
-  --large-font: 30px;
+  --xlarge-font: 30px; /* old large */
+  --large-font: 22px;
   --med-font: 20px;
   --small-font: 16px;
   --xsmall-font: 14px;
