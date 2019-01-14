@@ -1,0 +1,72 @@
+/* variables */
+:root {
+	
+  --primary-color: rgba(241,196,15 ,1);
+	
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-white-gray: #f6f6f6;
+  --color-lightest-gray: #d8d8d8;
+  --color-light-gray: #a2a2a2;
+  --color-mid-gray: #525252; /* (old dark) */
+  --color-dark-gray: #2A2728; /* (old mid) */
+  
+  /* shades of pink */
+  --color-bright-pink-r8: rgba(179,19,98,.8);
+  --color-bright-pink-r6: rgba(179,19,98,.6);
+  --color-bright-pink: #b31362;
+  
+  --color-lightest-pink: #f6e3e2;
+  --color-lightest-pink-r8: rgba(246,227,226,.8);
+  --color-lightest-pink-r6: rgba(246,227,226,.6);
+  
+  --color-light-pink: #caa09c;
+  --color-light-pink-r8: rgba(202,160,156,.8);
+  --color-light-pink-r6: rgba(202,160,156,.6);
+    
+  --color-mid-pink: #bc857a; /* (old dark) */
+  --color-mid-pink-r8: rgba(188,133,122,.8);
+  --color-mid-pink-r6: rgba(188,133,122,.6);
+    
+  --color-dark-pink: #7d5850; /* (old darkest) */
+  --color-dark-pink-r8: rgba(125,88,80,.8);
+  --color-dark-pink-r6: rgba(125,88,80,.6);
+  
+  
+  --color-white-brown: #fef8f2;
+  --color-lightest-brown: #feebda;
+  --color-light-brown: #d8b89a;
+  --color-mid-brown: #9a7b59; /* (old new) */
+  --color-dark-brown: #754d1b;
+  
+  --graphic-font: Cabin Sketch, sans-serif, Arial;
+  --written-font: Just Me Again Down Here, sans-serif, Arial;
+  --main-font: Open Sans Condensed, sans-serif, Arial;
+  
+  --large-font: 30px;
+  --med-font: 20px;
+  --small-font: 16px;
+  --xsmall-font: 14px;
+  --letter-spacing-reg: .8em;
+  
+  --small-border-radius: 3px;
+  --large-border-radius: 6px;
+}
+
+
+/* fonts
+----------------------------------------------- */
+@font-face {
+    font-family: Dam3Font;
+    src: url(https://indiegamelover.github.io/indiegamelover/Dam3-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: Damcursv1;
+    src: url(https://indiegamelover.github.io/indiegamelover/Damcursv-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: Damspeed;
+    src: url(https://indiegamelover.github.io/indiegamelover/Damspeed-Regular.woff) format('woff');
+}
