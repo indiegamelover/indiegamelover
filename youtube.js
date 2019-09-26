@@ -5,7 +5,7 @@
 		.ytLoader>.cover {width:100%;height:auto;}
 		.ytLoader>.playBtn {position:absolute;top:50%;left:50%;width:20%;height:auto;transform:translate(-50%,-50%);opacity:0.5;}
 </style>
-<script type='text/javascript'> 
+
 		function youTubes_makeDynamic() {
 			var $ytIframes = $('iframe[src*="youtube.com"]');
 			$ytIframes.each(function (i,e) {
@@ -24,4 +24,3 @@
 			});
 		};
 		$(document).ready(function () {youTubes_makeDynamic()});
-</script>  
